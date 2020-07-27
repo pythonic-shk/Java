@@ -30,6 +30,7 @@ public class BoardPlay {
 	
 	public List<Integer> move(User user, int value, int max) {
 		if(user.getPos() + value > max) {
+			user.setPos(max - (user.getPos() + value - max));
 			return new ArrayList<Integer>(){{
                 add(0);
                 add(user.getPos());
