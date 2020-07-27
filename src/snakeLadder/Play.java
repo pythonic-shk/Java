@@ -17,7 +17,7 @@ public class Play {
 	 */
 	public static void main(String[] args) {
 		
-		BoardFactory bFactory = BoardMode.modeSelect();
+		BoardInterface bFactory = BoardFactory.modeSelect();
 		bFactory.game();
 
 	}

@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author SKH.
  *         Created 23-Jul-2020.
  */
-public class BoardTextConcrete implements BoardFactory {
+public class BoardTextConcrete implements BoardInterface {
 
 	private final static int maxBoard = 100;
 	private static Text text = Text.get_instance();
